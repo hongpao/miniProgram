@@ -1,12 +1,27 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
+    "pages/login/login",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "春仓执赫",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color":"#666",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },{
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },{
+        "pagePath": "pages/login/login",
+        "text": "授权"
+      }
+    ]
   }
 }
