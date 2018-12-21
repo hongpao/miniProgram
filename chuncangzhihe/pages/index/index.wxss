@@ -3,9 +3,6 @@
   height: 240px;
 }
 
-.swiperItem {
-}
-
 .imageList {
   display: block;
   width: 100%;
