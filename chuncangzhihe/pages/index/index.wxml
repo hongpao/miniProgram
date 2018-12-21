@@ -1,10 +1,10 @@
 <!--index.wxml-->
 <view class="container">
   <swiper indicator-dots="{{swiper.indicatorDots}}" indicator-color="{{swiper.indicatorColor}}" indicator-active-color="{{swiper.indicatorActiveColor}}"
-    autoplay="{{swiper.autoplay}}">
+    autoplay="{{swiper.autoplay}}" class="swiper">
     <block wx:for="{{banner}}" wx:key="{{index}}">
-      <swiper-item>
-        <image class="" src="{{item.imageSrc}}" height="240" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
+      <swiper-item class="swiperItem">
+        <image class="imageList" src="{{item.imageSrc}}" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
       </swiper-item>
     </block>
   </swiper>

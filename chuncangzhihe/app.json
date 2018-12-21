@@ -6,22 +6,22 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#f8f8f8",
     "navigationBarTitleText": "春仓执赫",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color":"#666",
+    "color": "#666",
+    "position": "bottom",
     "list": [{
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },{
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
-      },{
-        "pagePath": "pages/login/login",
-        "text": "授权"
-      }
-    ]
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志"
+    }, {
+      "pagePath": "pages/login/login",
+      "text": "授权"
+    }]
   }
 }
