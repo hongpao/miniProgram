@@ -8,4 +8,9 @@
       </swiper-item>
     </block>
   </swiper>
+  <view class="">
+    123
+  </view>
+  <InfoLayer name="{{testName}}" catch:acf="toto" />
+
 </view>

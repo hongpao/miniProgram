@@ -1,0 +1,5 @@
+<view>
+    <view>modal title</view>
+    <slot name='asd'/>
+    <button catch:tap="toConfirm">click Btn</button>
+</view>

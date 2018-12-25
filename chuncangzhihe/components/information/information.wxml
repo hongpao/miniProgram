@@ -1,0 +1,8 @@
+<Modal catch:hahah="hahah_o">
+    <view slot="asd">
+        <view catch:tap="ffg">this is InfoLayer</view>
+        <picker mode="selector" bindchange="pickerGetName" range="{{name}}" value="{{name[index]}}">
+            <view class="picker">当前选择：{{name[index]}}</view>
+        </picker>
+    </view>
+</Modal>

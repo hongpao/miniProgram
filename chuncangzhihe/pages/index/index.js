@@ -4,6 +4,8 @@
  */
 
 import MiniUtils from '../../utils/index'
+import Requester from '../../http/requester';
+import API from '../../http/apis';
 
 Page({
   data: {
@@ -33,9 +35,26 @@ Page({
       imageSrc: 'https://assets.2dfire.com/frontend/9e5cfb05270dd3e29874e869d595ec40.jpg',
       text: '',
       url: ''
-    }]
+    }],
+    testName: ['李成敏', '李孝利', '李菲儿', '李冰冰', '李沁']
   },
   onLoad: function () {
     // MiniUtils.Login.login()
+  },
+  onShow() {
+    // const _this = this
+    // Requester.get({
+    //   url: API.GET_HOME_INFO,
+    //   data: {},
+    // }).then((result) => {
+    //   _this.setData({
+    //     banner: result.images
+    //   })
+    // }).catch((msg) => {
+
+    // });
+  },
+  toto(e) {
+    console.log('hongpao:', e);
   }
 })
