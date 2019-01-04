@@ -1,0 +1,14 @@
+<!--main.wxml-->
+<view class="container">
+    <!-- <swiper>
+        <block wx:for="{{pages}}" wx:key="index">
+            <swiper-item class="" item-id="">
+                <image class="bgImage" src="{{item}}" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
+            </swiper-item>
+        </block>
+
+    </swiper> -->
+    <view class="">
+        
+    </view>
+</view>
