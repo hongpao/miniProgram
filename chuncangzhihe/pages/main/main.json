@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "时光隧道"
+  "navigationBarTitleText": "时光隧道",
+  "usingComponents": {
+      "InfoLayer":"/components/information/information"
+  }
 }

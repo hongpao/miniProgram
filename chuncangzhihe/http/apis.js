@@ -6,6 +6,7 @@
 const API = {
     // 授权
     // LOGIN: '',
+    GET_MAIN: '/start_main',
     GET_HOME_INFO: '/get_home_info'
 };
 

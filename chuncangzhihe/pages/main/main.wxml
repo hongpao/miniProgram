@@ -1,14 +1,16 @@
 <!--main.wxml-->
 <view class="container">
-    <!-- <swiper>
-        <block wx:for="{{pages}}" wx:key="index">
-            <swiper-item class="" item-id="">
-                <image class="bgImage" src="{{item}}" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
-            </swiper-item>
-        </block>
+  <swiper indicator-dots="{{swiper.indicatorDots}}" indicator-color="{{swiper.indicatorColor}}" indicator-active-color="{{swiper.indicatorActiveColor}}"
+    autoplay="{{swiper.autoplay}}" class="swiper">
+    <block wx:for="{{banner}}" wx:key="{{index}}">
+      <swiper-item class="swiperItem">
+        <image class="imageList" src="{{item.imageSrc}}" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="">
+    123
+  </view>
+  <InfoLayer name="{{testName}}" catch:acf="toto" />
 
-    </swiper> -->
-    <view class="">
-        
-    </view>
 </view>
