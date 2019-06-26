@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <block wx:for="{{info}}">
+  <block wx:for="{{info}}" wx:key="index">
     <image class="space" src="{{item.imagePath}}" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
       
   </block>

@@ -9,5 +9,6 @@
     "navigationBarBackgroundColor": "#f8f8f8",
     "navigationBarTitleText": "春仓执赫",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
