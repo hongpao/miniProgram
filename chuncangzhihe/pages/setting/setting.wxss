@@ -1,0 +1,68 @@
+.main {
+    margin: 30rpx;
+}
+
+.part {
+    margin-bottom: 30rpx;
+    border: 1rpx #e2e2e2 solid;
+    border-radius: 10rpx;
+    padding: 30rpx;
+    -webkit-box-shadow: 10rpx 10rpx 10rpx #999;
+}
+
+.addNew {
+    position: relative;
+    height: 100rpx;
+    width: 100rpx;
+    margin: 0 auto;
+}
+
+.addNew::before {
+    content: '';
+    width: 100rpx;
+    height: 10rpx;
+    background-color: #e2e2e2;
+    position: absolute;
+    top: 45rpx;
+    left: 0;
+    border-radius: 10rpx;
+}
+
+.addNew::after {
+    content: '';
+    width: 10rpx;
+    height: 100rpx;
+    background-color: #e2e2e2;
+    position: absolute;
+    top: 0;
+    left: 45rpx;
+    border-radius: 10rpx;
+}
+
+.list {
+    display: -webkit-box;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-bottom: 30rpx;
+}
+
+.list:last-child {
+    margin-bottom: 0;
+}
+
+.title {
+    width: 120rpx;
+    text-align-last: justify;
+    -webkit-text-align-last: justify;
+    font-size: 28rpx;
+    color: #666;
+}
+
+.inPut {
+    border: 1rpx #e2e2e2 solid;
+    border-radius: 10rpx;
+    -webkit-box-flex: 1;
+    padding: 0 20rpx;
+    height: 80rpx;
+    margin-left: 50rpx;
+}

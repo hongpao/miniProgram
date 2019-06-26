@@ -9,34 +9,34 @@ import API from '../../http/apis';
 import BASE_URL from '../../http/baseUrl'
 
 Page({
-  data: {
-    info: []
-  },
-  onLoad: function () {
-    // MiniUtils.Login.login()
-  },
-  onShow() {
-    const _this = this
-    Requester.get({
-      url: API.GET_MAIN,
-    }).then((result) => {
+    data: {
+        info: []
+    },
+    onLoad: function () {
+        // MiniUtils.Login.login()
+    },
+    onShow() {
+        const _this = this
+        Requester.get({
+            url: API.GET_MAIN,
+        }).then((result) => {
 
-      let {
-        imagesAry = []
-      } = result
-      let inputInfo = []
-      for (let v of imagesAry) {
-        inputInfo.push({
-          imagePath: `${BASE_URL.API_BASE_URL}/images/nba/${v}`,
-          path: '',
-          name: v.split('.')[0]
+            let {
+                imagesAry = []
+            } = result
+            let inputInfo = []
+            for (let v of imagesAry) {
+                inputInfo.push({
+                    imagePath: `${BASE_URL.API_BASE_URL}/images/nba/${v}`,
+                    path: '',
+                    name: v.split('.')[0]
+                })
+            }
+            _this.setData({
+                info: inputInfo
+            })
+        }).catch((msg) => {
+
         })
-      }
-      _this.setData({
-        info: inputInfo
-      })
-    }).catch((msg) => {
-
-    })
-  }
+    }
 })
