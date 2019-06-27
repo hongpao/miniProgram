@@ -8,36 +8,53 @@ import Requester from '../../http/requester';
 import API from '../../http/apis';
 import BASE_URL from '../../http/baseUrl'
 
-const date = new Date()
-const years = []
-const months = []
-const days = []
-
-for (let i = 1990; i <= date.getFullYear(); i++) {
-    years.push(i)
-}
-
-for (let i = 1; i <= 12; i++) {
-    months.push(i)
-}
-
-for (let i = 1; i <= 31; i++) {
-    days.push(i)
-}
-
 Page({
     data: {
-        years: years,
-        year: date.getFullYear(),
-        months: months,
-        month: 2,
-        days: days,
-        day: 2,
-        value: [9999, 1, 1]
+        phase: '',
+        date: '',
+        week: '',
+        ff: [false, false, false, false, false],
+        lf: [false, false]
     },
-    onLoad: function () {},
+    onLoad() {},
     onShow() {
+        this.settingDate()
+    },
 
+    //设置日期
+    settingDate(date) {
+        if (MiniUtils.Utils.isEmpty(date)) {
+            date = date || ''
+        }
+
+        let today = MiniUtils.Utils.getTimes({
+            time: date,
+            style: 'Y-M-D&W'
+        })
+
+        let ta = today.split('&')
+        this.setData({
+            date: ta[0],
+            week: ta[1]
+        })
+    },
+
+    bindKeyInput(e) {
+        let {
+            detail,
+            target
+        } = e
+        let number = target.dataset.number || ''
+        let value = detail.value
+        console.log('ee', number, value)
+
+        let ff = this.data.ff
+        for (let index in ff) {
+        }
+        console.log(ff)
+        this.setData({
+            ff
+        })
     },
 
     //新增数据
@@ -45,12 +62,14 @@ Page({
         console.log('新增数据')
     },
 
-    bindChange: function (e) {
+    bindDateChange(e) {
         const val = e.detail.value
-        this.setData({
-            year: this.data.years[val[0]],
-            month: this.data.months[val[1]],
-            day: this.data.days[val[2]]
-        })
+        if (!MiniUtils.Utils.isEmpty(val)) {
+            this.settingDate(val)
+        }
+    },
+
+    bindWeekChange(e) {
+        console.log(e.detail.value)
     }
 })

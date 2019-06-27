@@ -62,7 +62,7 @@ class Utils {
         let time = options.time || ''
         let t
         if (time !== '') {
-            t = new Date(parseInt(time))
+            t = new Date(time)
         } else {
             t = new Date()
         }
