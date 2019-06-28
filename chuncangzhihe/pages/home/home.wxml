@@ -1,0 +1,11 @@
+<!--home.wxml-->
+<view class="container">
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+            duration="{{duration}}">
+            <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+                <image src="{{item}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </swiper>
+    </view>
+</view>

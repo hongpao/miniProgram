@@ -15,16 +15,11 @@
             </view>
             <view class="list" hover-class="none" hover-stop-propagation="false">
                 <view class="title" hover-class="none" hover-stop-propagation="false">前区号码:</view>
-                <input type="number" focus="{{ff[0]}}" data-number='1' bindinput="bindKeyInput" class="singleIn"
-                    maxlength="1" />
-                <input type="number" focus="{{ff[1]}}" data-number='2' bindinput="bindKeyInput" class="singleIn"
-                    maxlength="1" />
-                <input type="number" focus="{{ff[2]}}" data-number='3' bindinput="bindKeyInput" class="singleIn"
-                    maxlength="1" />
-                <input type="number" focus="{{ff[3]}}" data-number='4' bindinput="bindKeyInput" class="singleIn"
-                    maxlength="1" />
-                <input type="number" focus="{{ff[4]}}" data-number='5' bindinput="bindKeyInput" class="singleIn"
-                    maxlength="1" />
+                <input type="number" focus="{{ff[0]}}" data-number='0' class="singleIn" maxlength="1" />
+                <input type="number" focus="{{ff[1]}}" data-number='1' class="singleIn" maxlength="1" />
+                <input type="number" focus="{{ff[2]}}" data-number='2' class="singleIn" maxlength="1" />
+                <input type="number" focus="{{ff[3]}}" data-number='3' class="singleIn" maxlength="1" />
+                <input type="number" focus="{{ff[4]}}" data-number='4' class="singleIn" maxlength="1" />
             </view>
             <view class="list" hover-class="none" hover-stop-propagation="false">
                 <view class="title" hover-class="none" hover-stop-propagation="false">后区号码:</view>
@@ -70,9 +65,9 @@
                 <input type="number" class="fIn" placeholder="九等奖（注）" />
             </view>
         </view>
-        <view class="part" hover-class="none" hover-stop-propagation="false" catchtap="addNew">
+        <!-- <view class="part" hover-class="none" hover-stop-propagation="false" catchtap="addNew">
             <view class="addNew" hover-class="none" hover-stop-propagation="false"></view>
-        </view>
-        <button type="primary">保存</button>
+        </view> -->
+        <button type="primary" bindtap="save">保存</button>
     </view>
 </view>
