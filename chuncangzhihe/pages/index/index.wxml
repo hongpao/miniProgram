@@ -1,8 +1,20 @@
 <!--index.wxml-->
 <view class="container">
-  <block wx:for="{{info}}" wx:key="index">
-    <image class="space" src="{{item.imagePath}}" mode="aspectFill" lazy-load="false" binderror="" bindload="" />
-      
-  </block>
-    
+    <swiper class="swiper-box" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}"
+        duration="{{swiper.duration}}">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+            <image src="{{item}}" mode="aspectFill" class="slide-image" />
+        </swiper-item>
+    </swiper>
+    <view class="info-box">
+        <view class="info">这里是消息提示</view>
+    </view>
+    <view class="app-list clearfix">
+        <view wx:for="{{apps}}" wx:key="index" class="list">
+            <view class="apps">
+                <view class="app-logo {{item.logo}}"></view>
+                <view class="app-name">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
 </view>

@@ -1,9 +1,62 @@
-.container{
+.swiper-box {
+    width: 100%;
+    height: 400rpx;
+    margin-bottom: 20rpx;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.info-box {
+    padding: 10rpx 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.info {
+    color: #999;
+    font-size: 24rpx;
+    background-image: url('https://assets.2dfire.com/frontend/c71b0da744bc45c0f5b7a0cedac0ac3b.png');
+    background-repeat: no-repeat;
+    background-size: 30rpx 27rpx;
+    height: 27rpx;
+    line-height: 27rpx;
+    padding-left: 40rpx;
+}
+
+.app-list {
+    border-top: 1rpx #e2e2e2 solid;
+}
+
+.list {
+    float: left;
+    width: 25%;
     text-align: center;
 }
-.space {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin: 5px 6px;
+
+.apps {
+    padding: 30rpx 20rpx;
+    display: block;
+    text-decoration: none;
+}
+
+.app-logo {
+    background-repeat: no-repeat;
+    background-size: 88rpx 88rpx;
+    width: 88rpx;
+    height: 88rpx;
+    margin: 0 auto;
+}
+
+.hmjsq {
+    background-image: url("https://assets.2dfire.com/frontend/595205f1d07f86b7870946b3292b7d81.png");
+}
+
+.app-name {
+    font-size: 26rpx;
+    color: #333;
+    line-height: 36rpx;
+    margin-top: 10rpx;
 }

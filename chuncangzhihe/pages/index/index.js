@@ -1,5 +1,5 @@
 /**
- * create by hujunhao 2018.12.19
+ * create by hujunhao 2019.6.28
  * 首页
  */
 
@@ -10,33 +10,18 @@ import BASE_URL from '../../http/baseUrl'
 
 Page({
     data: {
-        info: []
+        imgUrls: ['../../images/WechatIMG2.jpeg', '../../images/WechatIMG3.jpeg', '../../images/WechatIMG1.jpeg'],
+        swiper: {
+            indicatorDots: false,
+            autoplay: true,
+            interval: 3000,
+            duration: 1000,
+        },
+        apps: [{
+            logo: 'hmjsq',
+            name: '杭麻计算器'
+        }]
     },
-    onLoad: function () {
-        // MiniUtils.Login.login()
-    },
-    onShow() {
-        const _this = this
-        Requester.get({
-            url: API.GET_MAIN,
-        }).then((result) => {
-
-            let {
-                imagesAry = []
-            } = result
-            let inputInfo = []
-            for (let v of imagesAry) {
-                inputInfo.push({
-                    imagePath: `${BASE_URL.API_BASE_URL}/images/nba/${v}`,
-                    path: '',
-                    name: v.split('.')[0]
-                })
-            }
-            _this.setData({
-                info: inputInfo
-            })
-        }).catch((msg) => {
-
-        })
-    }
+    onLoad() {},
+    onShow() {}
 })

@@ -1,9 +1,0 @@
-/**main.wxss**/
-.swiper {
-    height: 240px;
-  }
-  
-  .imageList {
-    display: block;
-    width: 100%;
-  }

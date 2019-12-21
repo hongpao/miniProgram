@@ -1,16 +1,35 @@
 {
-  "pages": [
-    "pages/home/home",
-    "pages/index/index",
-    "pages/main/main",
-    "pages/login/login",
-    "pages/setting/setting"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#f8f8f8",
-    "navigationBarTitleText": "春仓执赫",
-    "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/index/index",
+        "pages/article/article",
+        "pages/account/account"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f8f8f8",
+        "navigationBarTitleText": "春仓执赫",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#303030",
+        "selectedColor": "#E7380D",
+        "backgroundColor": "#FFFFFF",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "工具",
+            "iconPath": "./images/index.png",
+            "selectedIconPath": "./images/indexSelected.png"
+        }, {
+            "pagePath": "pages/article/article",
+            "text": "精选",
+            "iconPath": "./images/choice.png",
+            "selectedIconPath": "./images/choiceSelected.png"
+        }, {
+            "pagePath": "pages/account/account",
+            "text": "我",
+            "iconPath": "./images/mine.png",
+            "selectedIconPath": "./images/mineSelected.png"
+        }]
+    },
+    "sitemapLocation": "sitemap.json"
 }
