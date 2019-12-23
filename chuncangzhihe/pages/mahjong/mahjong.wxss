@@ -1,0 +1,70 @@
+/* pages/mahjong/mahjong.wxss */
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: auto;
+    background-color: #f8f8f8;
+    margin: 20rpx;
+    border: 1rpx #e2e2e2 solid;
+    border-radius: 8rpx;
+    overflow: hidden;
+}
+
+.box {
+    padding: 40rpx 30rpx;
+}
+
+.btn {
+    margin: 30rpx;
+    flex-shrink: 0;
+}
+
+.tr {
+    border-bottom: 1rpx #e2e2e2 solid;
+    display: -webkit-box;
+    font-size: 28rpx;
+}
+
+.title {
+    color: #000;
+    font-weight: 600;
+}
+
+.list .tr:last-child {
+    border-bottom: none;
+}
+
+.td {
+    -webkit-box-flex: 1;
+    width: 20%;
+    text-align: center;
+    border-right: 1rpx #e2e2e2 solid;
+    padding: 16rpx 0;
+}
+
+.list .tr .td:last-child {
+    border-right: none;
+}
+
+.red {
+    color: #ff3300;
+}
+
+.green {
+    color: rgba(30, 161, 20, 1);
+}
+
+.line {}
+
+.name {
+    float: left;
+}
+
+.in-p {
+    background-color: #fff;
+}

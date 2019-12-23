@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
-    <swiper class="swiper-box" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}"
-        duration="{{swiper.duration}}">
+    <swiper class="swiper-box" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}"
+        interval="{{swiper.interval}}" duration="{{swiper.duration}}">
         <swiper-item wx:for="{{imgUrls}}" wx:key="index">
             <image src="{{item}}" mode="aspectFill" class="slide-image" />
         </swiper-item>
@@ -10,7 +10,7 @@
         <view class="info">这里是消息提示</view>
     </view>
     <view class="app-list clearfix">
-        <view wx:for="{{apps}}" wx:key="index" class="list">
+        <view wx:for="{{apps}}" wx:key="index" class="list" catchtap="routeTo">
             <view class="apps">
                 <view class="app-logo {{item.logo}}"></view>
                 <view class="app-name">{{item.name}}</view>

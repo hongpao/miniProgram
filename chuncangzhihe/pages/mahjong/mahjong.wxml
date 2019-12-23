@@ -1,0 +1,40 @@
+<!--pages/mahjong/mahjong.wxml-->
+<view class="container">
+    <block wx:if="{{!isStart}}">
+        <view class="content">
+            <view class="box">
+                <view class="line clearfix">
+                    <view class="name">基数：</view>
+                    <input type="text" class="in-p"/>
+                </view>
+            </view>
+        </view>
+        <button class="btn" type="primary" size="default" catchtap="toStart">开桌</button>
+    </block>
+    <block wx:else>
+        <view class="content">
+            <view class="tr title">
+                <view class="td">红袍</view>
+                <view class="td">红袍</view>
+                <view class="td">红袍</view>
+                <view class="td">红袍</view>
+                <view class="td">台</view>
+            </view>
+            <view class="tr">
+                <view class="td">+12</view>
+                <view class="td">+23</view>
+                <view class="td">-34</view>
+                <view class="td">-1</view>
+                <view class="td">0</view>
+            </view>
+            <view class="tr">
+                <view class="td red">+120</view>
+                <view class="td red">+203</view>
+                <view class="td green">-304</view>
+                <view class="td green">-10</view>
+                <view class="td">20</view>
+            </view>
+        </view>
+        <button class="btn" type="primary" size="default" catchtap="finish">结算</button>
+    </block>
+</view>

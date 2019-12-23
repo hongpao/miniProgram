@@ -19,9 +19,15 @@ Page({
         },
         apps: [{
             logo: 'hmjsq',
-            name: '杭麻计算器'
+            name: '杭麻计算器',
+            route: 'mahjong'
         }]
     },
     onLoad() {},
-    onShow() {}
+    onShow() {},
+
+    //页面跳转
+    routeTo(){
+        MiniUtils.Router.navigateTo('mahjong')
+    }
 })
