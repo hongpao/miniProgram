@@ -59,12 +59,22 @@
     color: rgba(30, 161, 20, 1);
 }
 
-.line {}
+.line {
+    margin-bottom: 50rpx;
+}
 
 .name {
     float: left;
+    width: 180rpx;
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 80rpx;
 }
 
 .in-p {
     background-color: #fff;
+    float: left;
+    height: 80rpx;
+    border-radius: 8rpx;
+    padding: 0 20rpx;
 }

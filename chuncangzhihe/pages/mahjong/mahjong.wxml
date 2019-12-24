@@ -5,7 +5,23 @@
             <view class="box">
                 <view class="line clearfix">
                     <view class="name">基数：</view>
-                    <input type="text" class="in-p"/>
+                    <input type="text" value="{{basePrise}}" data-type="1" bindinput="changeVal" class="in-p" />
+                </view>
+                <view class="line clearfix">
+                    <view class="name">好友：</view>
+                    <input type="text" value="{{user[0].name}}" data-type="2" bindinput="changeVal" class="in-p" />
+                </view>
+                <view class="line clearfix">
+                    <view class="name">好友：</view>
+                    <input type="text" value="{{user[1].name}}" data-type="3" bindinput="changeVal" class="in-p" />
+                </view>
+                <view class="line clearfix">
+                    <view class="name">好友：</view>
+                    <input type="text" value="{{user[2].name}}" data-type="4" bindinput="changeVal" class="in-p" />
+                </view>
+                <view class="line clearfix">
+                    <view class="name">好友：</view>
+                    <input type="text" value="{{user[3].name}}" data-type="5" bindinput="changeVal" class="in-p" />
                 </view>
             </view>
         </view>
