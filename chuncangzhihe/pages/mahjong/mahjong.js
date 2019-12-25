@@ -1,28 +1,20 @@
 // pages/mahjong/mahjong.js
-Page({
+import MiniUtils from '../../utils/index'
 
+Page({
     /**
      * 页面的初始数据
      */
     data: {
-        isStart: false, //是否已经开桌
+        isStart: true, //是否已经开桌
+        isShowBox: false, //是否显示增加本轮成绩的弹层
         basePrise: '',
-        user: [{
-            name: '红袍',
+        user: ['红袍', '蓝袍', '黄袍', '黑袍'],
+        turns: [],
+        dealer: {
+            name: '台板费',
             turn: []
-        }, {
-            name: '红袍2',
-            turn: []
-        }, {
-            name: '红袍3',
-            turn: []
-        }, {
-            name: '红袍4',
-            turn: []
-        }, {
-            name: '台板',
-            turn: []
-        }]
+        }
     },
 
     /**
@@ -53,16 +45,16 @@ Page({
                 basePrise = value.trim()
                 break
             case 2:
-                user[0].name = value.trim()
+                user[0] = value.trim()
                 break
             case 3:
-                user[1].name = value.trim()
+                user[1] = value.trim()
                 break
             case 4:
-                user[2].name = value.trim()
+                user[2] = value.trim()
                 break
             case 5:
-                user[3].name = value.trim()
+                user[3] = value.trim()
                 break
         }
 
@@ -74,9 +66,40 @@ Page({
 
     //开桌
     toStart() {
+        let {
+            basePrise,
+            user
+        } = this.data
+
+        let isStart = true
+
+        if (MiniUtils.Utils.isEmpty(basePrise)) {
+            isStart = false
+            MiniUtils.Toast.show('请输入台板费基数')
+        }
+
+        if (isStart) {
+            for (let item of user) {
+                if (MiniUtils.Utils.isEmpty(item)) {
+                    isStart = false
+                }
+            }
+            if (!isStart) {
+                MiniUtils.Toast.show('请输入麻友代号')
+            }
+        }
 
         this.setData({
-            isStart: true
+            isStart
+        })
+    },
+
+    //新增本轮成绩
+    showBox(e) {
+        let status = e.target.dataset.status || '0'
+        let isShowBox = +status === 1
+        this.setData({
+            isShowBox
         })
     }
 })

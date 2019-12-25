@@ -7,21 +7,9 @@
                     <view class="name">基数：</view>
                     <input type="text" value="{{basePrise}}" data-type="1" bindinput="changeVal" class="in-p" />
                 </view>
-                <view class="line clearfix">
+                <view class="line clearfix" wx:for="{{user}}" wx:key="index">
                     <view class="name">好友：</view>
-                    <input type="text" value="{{user[0].name}}" data-type="2" bindinput="changeVal" class="in-p" />
-                </view>
-                <view class="line clearfix">
-                    <view class="name">好友：</view>
-                    <input type="text" value="{{user[1].name}}" data-type="3" bindinput="changeVal" class="in-p" />
-                </view>
-                <view class="line clearfix">
-                    <view class="name">好友：</view>
-                    <input type="text" value="{{user[2].name}}" data-type="4" bindinput="changeVal" class="in-p" />
-                </view>
-                <view class="line clearfix">
-                    <view class="name">好友：</view>
-                    <input type="text" value="{{user[3].name}}" data-type="5" bindinput="changeVal" class="in-p" />
+                    <input type="text" value="{{item}}" data-type="{{index+2}}" bindinput="changeVal" class="in-p" />
                 </view>
             </view>
         </view>
@@ -30,27 +18,28 @@
     <block wx:else>
         <view class="content">
             <view class="tr title">
-                <view class="td">红袍</view>
-                <view class="td">红袍</view>
-                <view class="td">红袍</view>
-                <view class="td">红袍</view>
-                <view class="td">台</view>
+                <view class="td" wx:for="{{user}}" wx:key="index">{{item}}</view>
+                <view class="td">{{dealer.name}}</view>
             </view>
-            <view class="tr">
-                <view class="td">+12</view>
-                <view class="td">+23</view>
-                <view class="td">-34</view>
-                <view class="td">-1</view>
-                <view class="td">0</view>
-            </view>
-            <view class="tr">
-                <view class="td red">+120</view>
-                <view class="td red">+203</view>
-                <view class="td green">-304</view>
-                <view class="td green">-10</view>
-                <view class="td">20</view>
+            <view class="tr" wx:for="{{turns}}" wx:key="index">
+                <view class="td" wx:for="{{item}}" wx:for-index="idx" wx:for-item="slices" wx:key="idx">{{slices}}</view>
+                <view class="td">{{dealer.turn[index]}}</view>
             </view>
         </view>
-        <button class="btn" type="primary" size="default" catchtap="finish">结算</button>
+        <view class="btn clearfix">
+            <button type="default" size="default" data-status="1" catchtap="showBox">本轮结算</button>
+            <button type="primary" size="default" catchtap="finish">总结算</button>
+        </view>
     </block>
+    <view class="score-add-box" wx:if="{{isShowBox}}">
+        <view class="j-title">本轮结算</view>
+        <view class="list clearfix" wx:for="{{user}}" wx:key="index">
+            <view class="na">{{item}}:</view>
+            <input type="text" bindinput="changeVal2" class="in-s" />
+        </view>
+        <view class="s-btn">
+            <button type="default" size="mini"  data-status="0" catchtap="showBox">取消</button>
+            <button type="primary" size="mini" catchtap="over">确认</button>
+        </view>
+    </view>
 </view>

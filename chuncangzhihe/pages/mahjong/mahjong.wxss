@@ -24,6 +24,18 @@
     flex-shrink: 0;
 }
 
+.btn button {
+    width: 300rpx;
+}
+
+.btn button:first-child {
+    float: left;
+}
+
+.btn button:last-child {
+    float: right;
+}
+
 .tr {
     border-bottom: 1rpx #e2e2e2 solid;
     display: -webkit-box;
@@ -45,6 +57,9 @@
     text-align: center;
     border-right: 1rpx #e2e2e2 solid;
     padding: 16rpx 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .list .tr .td:last-child {
@@ -77,4 +92,64 @@
     height: 80rpx;
     border-radius: 8rpx;
     padding: 0 20rpx;
+}
+
+.score-add-box {
+    position: absolute;
+    top: 120rpx;
+    left: 20rpx;
+    right: 20rpx;
+    background-color: #fff;
+    padding: 40rpx;
+    border-radius: 8rpx;
+    box-shadow: 4rpx 4rpx 10rpx 5rpx rgba(0, 0, 0, .5);
+}
+
+.j-title {
+    text-align: center;
+    font-size: 32rpx;
+    font-weight: bold;
+    margin-bottom: 60rpx;
+}
+
+.list {
+    margin-bottom: 20rpx;
+}
+
+.list .na {
+    float: left;
+    width: 120rpx;
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 80rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 20rpx;
+}
+
+.list .in-s {
+    background-color: #e8e8e8;
+    float: left;
+    height: 80rpx;
+    border-radius: 8rpx;
+    padding: 0 20rpx;
+}
+
+.s-btn {
+    margin-top: 60rpx;
+    text-align: center;
+}
+
+.s-btn button {
+    width: 240rpx;
+    display: inline-block;
+}
+
+.s-btn button:first-child {
+    margin-right: 20rpx;
+}
+
+.s-btn button:last-child {
+    margin-left: 20rpx;
 }
