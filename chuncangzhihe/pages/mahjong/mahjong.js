@@ -1,16 +1,18 @@
 // pages/mahjong/mahjong.js
 import MiniUtils from '../../utils/index'
+import Types from '../../utils/types'
 
 Page({
     /**
      * 页面的初始数据
      */
     data: {
-        isStart: true, //是否已经开桌
+        isStart: false, //是否已经开桌
         isShowBox: false, //是否显示增加本轮成绩的弹层
         basePrise: '',
-        user: ['红袍', '蓝袍', '黄袍', '黑袍'],
+        user: ['', '', '', ''],
         turns: [],
+        thisTurn: [],
         dealer: {
             name: '台板费',
             turn: []
@@ -21,7 +23,10 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        let turns = MiniUtils.Storage.get(Types.MAHJONG)
+        this.setData({
+            turns
+        })
     },
 
     /**
@@ -71,9 +76,10 @@ Page({
             user
         } = this.data
 
+        let rule = /^\d+$/
         let isStart = true
 
-        if (MiniUtils.Utils.isEmpty(basePrise)) {
+        if (MiniUtils.Utils.isEmpty(basePrise) && rule.test(basePrise)) {
             isStart = false
             MiniUtils.Toast.show('请输入台板费基数')
         }
@@ -101,5 +107,57 @@ Page({
         this.setData({
             isShowBox
         })
+    },
+
+    //片数
+    changeVal2(e) {
+        let rule = /^\d+$/
+        let value = e.detail.value
+
+        if (!MiniUtils.Utils.isEmpty(value) && rule.test(value)) {
+            let {
+                thisTurn
+            } = this.data
+            let index = e.target.dataset.index
+            thisTurn[index] = value
+            this.setData({
+                thisTurn
+            })
+        } else {
+            MiniUtils.Toast.show('格式不对啦')
+        }
+    },
+
+    //增加本轮成绩
+    confirmThisTurn() {
+        let {
+            turns,
+            thisTurn
+        } = this.data
+
+        let isOK = true
+
+        if (thisTurn.length === 4) {
+            for (let item of thisTurn) {
+                if (MiniUtils.Utils.isEmpty(item)) {
+                    isOK = false
+                }
+            }
+        } else {
+            isOK = false
+        }
+
+        if (isOK) {
+            turns.push(thisTurn)
+            this.setData({
+                turns,
+                thisTurn: [],
+                isShowBox: false
+            })
+
+            MiniUtils.Storage.set(Types.MAHJONG, turns)
+        } else {
+            MiniUtils.Toast.show('缺少成绩')
+        }
     }
 })

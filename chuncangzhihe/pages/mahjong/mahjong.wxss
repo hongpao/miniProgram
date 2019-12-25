@@ -15,6 +15,13 @@
     overflow: hidden;
 }
 
+.bt {
+    font-size: 40rpx;
+    color: #000;
+    text-align: center;
+    margin: 40rpx 0;
+}
+
 .box {
     padding: 40rpx 30rpx;
 }
