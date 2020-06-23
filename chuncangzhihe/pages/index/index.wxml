@@ -17,4 +17,21 @@
             </view>
         </view>
     </view>
+    <view class="box">
+        <view class="li">
+            <image src="{{imgUrls[0]}}" mode="aspectFill" class="article-image" />
+            <view class="title">这里是标题显示的地方</view>
+            <view class="desc">这里是标题显示的地方这里是标题显示的地方这里是标题显示的地方</view>
+        </view>
+        <view class="li">
+            <image src="{{imgUrls[0]}}" mode="aspectFill" class="article-image" />
+            <view class="title">这里是标题显示的地方</view>
+            <view class="desc">这里是标题显示的地方这里是标题显示的地方这里是标题显示的地方</view>
+        </view>
+        <view class="li">
+            <image src="{{imgUrls[0]}}" mode="aspectFill" class="article-image" />
+            <view class="title">这里是标题显示的地方</view>
+            <view class="desc">这里是标题显示的地方这里是标题显示的地方这里是标题显示的地方</view>
+        </view>
+    </view>
 </view>

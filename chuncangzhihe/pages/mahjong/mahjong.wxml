@@ -4,10 +4,6 @@
         <view class="content">
             <view class="bt">杭州麻将计算器</view>
             <view class="box">
-                <view class="line clearfix">
-                    <view class="name">基数：</view>
-                    <input type="number" value="{{basePrise}}" data-type="1" bindinput="changeVal" class="in-p" />
-                </view>
                 <view class="line clearfix" wx:for="{{user}}" wx:key="index">
                     <view class="name">麻友：</view>
                     <input type="text" value="{{item}}" data-type="{{index+2}}" bindinput="changeVal" class="in-p" />

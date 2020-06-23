@@ -27,7 +27,7 @@
 }
 
 .app-list {
-    border-top: 1rpx #e2e2e2 solid;
+    /* border-top: 1rpx #e2e2e2 solid; */
 }
 
 .list {
@@ -59,4 +59,37 @@
     color: #333;
     line-height: 36rpx;
     margin-top: 10rpx;
+}
+
+.box {
+    background-color: #f8f8f8;
+    padding: 10px 15px;
+}
+
+.li {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px 10px 10px 100px;
+    position: relative;
+    min-height: 60px;
+}
+
+.article-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 60px;
+    border-radius: 3px;
+}
+
+.title {
+    font-size: 14px;
+    color: #000;
+    line-height: 20px;
+}
+
+.desc {
+    font-size: 12px;
+    color: #999;
 }

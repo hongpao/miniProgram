@@ -7,10 +7,10 @@ Page({
      * 页面的初始数据
      */
     data: {
-        isStart: false, //是否已经开桌
+        isStart: true, //是否已经开桌
         isShowBox: false, //是否显示增加本轮成绩的弹层
         basePrise: '',
-        user: ['', '', '', ''],
+        user: ['梅', '兰', '竹', '菊'],
         turns: [],
         thisTurn: [],
         dealer: {
@@ -23,7 +23,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        let turns = MiniUtils.Storage.get(Types.MAHJONG)
+        let turns = MiniUtils.Storage.get(Types.MAHJONG) || []
         this.setData({
             turns
         })
@@ -79,20 +79,18 @@ Page({
         let rule = /^\d+$/
         let isStart = true
 
-        if (MiniUtils.Utils.isEmpty(basePrise) && rule.test(basePrise)) {
-            isStart = false
-            MiniUtils.Toast.show('请输入台板费基数')
-        }
+        // if (MiniUtils.Utils.isEmpty(basePrise) && rule.test(basePrise)) {
+        //     isStart = false
+        //     MiniUtils.Toast.show('请输入台板费基数')
+        // }
 
-        if (isStart) {
-            for (let item of user) {
-                if (MiniUtils.Utils.isEmpty(item)) {
-                    isStart = false
-                }
+        for (let item of user) {
+            if (MiniUtils.Utils.isEmpty(item)) {
+                isStart = false
             }
-            if (!isStart) {
-                MiniUtils.Toast.show('请输入麻友代号')
-            }
+        }
+        if (!isStart) {
+            MiniUtils.Toast.show('请输入麻友代号')
         }
 
         this.setData({

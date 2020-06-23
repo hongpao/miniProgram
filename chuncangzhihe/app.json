@@ -9,7 +9,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f8f8f8",
     "navigationBarTitleText": "春仓执赫",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
   },
   "tabBar": {
     "color": "#303030",

@@ -10,16 +10,36 @@ import BASE_URL from '../../http/baseUrl'
 
 Page({
     data: {
-        imgUrls: ['../../images/WechatIMG2.jpeg', '../../images/WechatIMG3.jpeg', '../../images/WechatIMG1.jpeg'],
+        imgUrls: [
+            '../../images/WechatIMG2.jpeg',
+            '../../images/WechatIMG3.jpeg',
+            '../../images/WechatIMG1.jpeg'
+        ],
         swiper: {
             indicatorDots: false,
             autoplay: true,
-            interval: 3000,
-            duration: 1000,
+            interval: 2000,
+            duration: 500,
         },
         apps: [{
             logo: 'hmjsq',
-            name: '杭麻计算器',
+            name: '计算器',
+            route: 'mahjong'
+        }, {
+            logo: 'hmjsq',
+            name: '计算器',
+            route: 'mahjong'
+        }, {
+            logo: 'hmjsq',
+            name: '计算器',
+            route: 'mahjong'
+        }, {
+            logo: 'hmjsq',
+            name: '计算器',
+            route: 'mahjong'
+        }, {
+            logo: 'hmjsq',
+            name: '计算器',
             route: 'mahjong'
         }]
     },
