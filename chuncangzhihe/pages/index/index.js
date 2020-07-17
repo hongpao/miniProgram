@@ -25,22 +25,6 @@ Page({
             logo: 'hmjsq',
             name: '计算器',
             route: 'mahjong'
-        }, {
-            logo: 'hmjsq',
-            name: '计算器',
-            route: 'mahjong'
-        }, {
-            logo: 'hmjsq',
-            name: '计算器',
-            route: 'mahjong'
-        }, {
-            logo: 'hmjsq',
-            name: '计算器',
-            route: 'mahjong'
-        }, {
-            logo: 'hmjsq',
-            name: '计算器',
-            route: 'mahjong'
         }]
     },
     onLoad() {},

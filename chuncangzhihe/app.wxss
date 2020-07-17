@@ -1,3 +1,9 @@
+page {
+    background-size: cover;
+    background-color: #f3f3f3;
+    z-index: -1;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: "";
@@ -11,4 +17,16 @@
 .clearfix {
     clear: both;
     zoom: 1;
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+    color: #fff;
 }

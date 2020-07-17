@@ -1,0 +1,9 @@
+/* pages/order/order.wxss */
+.message {
+    background-color: #fffbe6;
+    margin: 32rpx;
+    padding: 20px 30rpx;
+    border-radius: 8rpx;
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, .65);
+}

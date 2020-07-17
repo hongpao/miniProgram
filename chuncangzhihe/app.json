@@ -1,9 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/article/article",
+    "pages/order/order",
     "pages/account/account",
-    "pages/mahjong/mahjong"
+    "pages/mahjong/mahjong",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,8 +25,8 @@
         "selectedIconPath": "./images/indexSelected.png"
       },
       {
-        "pagePath": "pages/article/article",
-        "text": "精选",
+        "pagePath": "pages/order/order",
+        "text": "订单",
         "iconPath": "./images/choice.png",
         "selectedIconPath": "./images/choiceSelected.png"
       },

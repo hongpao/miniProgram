@@ -1,0 +1,139 @@
+/* pages/test/test.wxss */
+.swiperOutPart {
+    height: 100vh;
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.swiperinPart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.c {
+    background-color: rgba(165, 87, 87, 0.2);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.d {
+    background-color: rgba(0, 0, 0, .5);
+    opacity: .2;
+    width: 100%;
+    height: 100%;
+}
+
+.like-btn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-image: url('https://assets.2dfire.com/frontend/ab6b94c5663c662d68dbb470bcf53a19.png');
+    background-color: rgba(0, 0, 0, .3);
+    background-size: 64rpx 64rpx;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 64rpx;
+    height: 64rpx;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.like-btn:active {
+    background-color: rgba(0, 0, 0, .6);
+    /* bottom: 55px;
+    right: 55px;
+    width: 70px;
+    height: 70px; */
+}
+
+.count {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background-color: rgba(0, 0, 0, .5);
+    height: 14px;
+    line-height: 14px;
+    padding: 0 8px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.bubble-box {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 2;
+    width: 64rpx;
+    height: 64rpx;
+}
+
+.bubble {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64rpx;
+    height: 64rpx;
+    border-radius: 50%;
+    line-height: 64rpx;
+    text-align: center;
+    opacity: 0;
+}
+
+.ball {
+    background-color: burlywood;
+}
+
+.ball2 {
+    background-color: darkcyan;
+}
+
+.move-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.dragon {
+    background-repeat: no-repeat;
+    background-size: 206rpx 216rpx;
+    width: 206rpx;
+    height: 216rpx;
+}
+
+.dragon-on-left {
+    background-image: url('https://assets.2dfire.com/frontend/d1110357596aee58698f30d51fbb342f.png');
+}
+
+.dragon-on-right {
+    background-image: url('https://assets.2dfire.com/frontend/fe0c5842e45d3782ad94e74d69efa92a.png');
+}
+
+.left-part {
+    float: left;
+    padding: 456rpx 0 0 30rpx;
+}
+
+.box {}
+
+.tag {
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: 80rpx;
+}
+
+.content {}

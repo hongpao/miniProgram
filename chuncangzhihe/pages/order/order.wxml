@@ -1,0 +1,26 @@
+<!--pages/order/order.wxml-->
+<view>
+    <view class="message">
+        sfldsafhalkdsfalk
+    </view>
+    <view class="order-box">
+        <view class="list">
+            <view class="header">
+                <view class="logo"></view>
+                <view class="name">店铺（卖家）名称</view>
+                <view class="status">交易成功</view>
+            </view>
+            <view class="info">
+                <view class="goods-image"></view>
+                <view class="goods-info">
+                    <view class="info">产品介绍</view>
+                    <view class="tags">标签</view>
+                    <view class="price">
+                        <view class="gray">总价：¥10.00</view>
+                        <view class="">实付款：¥10.00</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
