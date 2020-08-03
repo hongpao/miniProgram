@@ -23,16 +23,26 @@
 
                     <!-- 气泡特效 -->
                     <view class="bubble-box">
-                        <view class="bubble ball2" animation='{{an[0]}}'>1</view>
-                        <view class="bubble ball" animation='{{an[1]}}'>2</view>
-                        <view class="bubble ball2" animation='{{an[2]}}'>3</view>
-                        <view class="bubble ball" animation='{{an[3]}}'>4</view>
-                        <view class="bubble ball2" animation='{{an[4]}}'>5</view>
-                        <view class="bubble ball" animation='{{an[5]}}'>6</view>
-                        <view class="bubble ball2" animation='{{an[6]}}'>7</view>
-                        <view class="bubble ball" animation='{{an[7]}}'>8</view>
-                        <view class="bubble ball2" animation='{{an[8]}}'>9</view>
-                        <view class="bubble ball" animation='{{an[9]}}'>10</view>
+                        <view class="bubble b1" animation='{{an[0]}}'></view>
+                        <view class="bubble b2" animation='{{an[1]}}'></view>
+                        <view class="bubble b3" animation='{{an[2]}}'></view>
+                        <view class="bubble b4" animation='{{an[3]}}'></view>
+                        <view class="bubble b5" animation='{{an[4]}}'></view>
+                        <view class="bubble b6" animation='{{an[5]}}'></view>
+                        <view class="bubble b7" animation='{{an[6]}}'></view>
+                        <view class="bubble b8" animation='{{an[7]}}'></view>
+                        <view class="bubble b9" animation='{{an[8]}}'></view>
+                        <view class="bubble b10" animation='{{an[9]}}'></view>
+                        <view class="bubble b1" animation='{{an[10]}}'></view>
+                        <view class="bubble b2" animation='{{an[11]}}'></view>
+                        <view class="bubble b3" animation='{{an[12]}}'></view>
+                        <view class="bubble b4" animation='{{an[13]}}'></view>
+                        <view class="bubble b5" animation='{{an[14]}}'></view>
+                        <view class="bubble b6" animation='{{an[15]}}'></view>
+                        <view class="bubble b7" animation='{{an[16]}}'></view>
+                        <view class="bubble b8" animation='{{an[17]}}'></view>
+                        <view class="bubble b9" animation='{{an[18]}}'></view>
+                        <view class="bubble b10" animation='{{an[19]}}'></view>
                     </view>
 
                     <!-- 点赞按钮 -->

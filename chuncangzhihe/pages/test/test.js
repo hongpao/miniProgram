@@ -19,7 +19,7 @@ Page({
         } = this.data
 
         // 气泡循环点击设置
-        index = index > 9 ? 0 : index
+        index = index > 19 ? 0 : index
 
         // 初始化动效参数
         let ty = -30,
@@ -28,18 +28,18 @@ Page({
 
         //创建一个动画实例 animation。
         let aimation = wx.createAnimation({
-            duration: 200, // 动画持续时间
+            duration: 400, // 动画持续时间
             timingFunction: 'linear' // 定义动画效果，当前是匀速
         })
 
         for (let i = 0; i < 10; i++) {
-            aimation.translateY(ty).translateX(tx).opacity(op).step()
+            aimation.translateY(ty).translateX(tx).scale(1.5).opacity(op).step()
             // aimation.opacity(0).step()
             // aimation.translateY(0).translateX(0).step()
             // aimation.opacity(1).step()
             
             //Y轴偏移
-            ty -= 30
+            ty -= 20
 
             //X轴偏移
             let x = parseInt(Math.random() * 20)

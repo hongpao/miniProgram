@@ -89,14 +89,48 @@
     line-height: 64rpx;
     text-align: center;
     opacity: 0;
+    background-repeat: no-repeat;
+    background-size: 64rpx 64rpx;
 }
 
-.ball {
-    background-color: burlywood;
+.b1 {
+    background-image: url('https://assets.2dfire.com/frontend/114e015e8913dd5d0a78fe95294b44c5.png');
 }
 
-.ball2 {
-    background-color: darkcyan;
+.b2 {
+    background-image: url('https://assets.2dfire.com/frontend/fc1b1e0cad7f3ee2ee5ecae0f6649094.png');
+}
+
+.b3 {
+    background-image: url('https://assets.2dfire.com/frontend/43df3bb553caff7831e5b0a9497b9188.png');
+}
+
+.b4 {
+    background-image: url('https://assets.2dfire.com/frontend/87e7a0a311b8c0501430eb53e826367d.png');
+}
+
+.b5 {
+    background-image: url('https://assets.2dfire.com/frontend/7ef0c00819227501b761e32cc4bde942.png');
+}
+
+.b6 {
+    background-image: url('https://assets.2dfire.com/frontend/f5cf64ad184f0fb7ed755dc9cdc0246d.png');
+}
+
+.b7 {
+    background-image: url('https://assets.2dfire.com/frontend/4f4a1ce20687df01aeb6c8209e4cd741.png');
+}
+
+.b8 {
+    background-image: url('https://assets.2dfire.com/frontend/8701aa96d371e2affc3a8e2f3ef12855.png');
+}
+
+.b9 {
+    background-image: url('https://assets.2dfire.com/frontend/ae4ebf85778101ed2570df6900ac2342.png');
+}
+
+.b10 {
+    background-image: url('https://assets.2dfire.com/frontend/251cc2a8f64bc7ff7102ab18e23879f0.png');
 }
 
 .move-area {
@@ -131,7 +165,7 @@
 .box {}
 
 .tag {
-    background-image: url('');
+    /* background-image: url(''); */
     background-repeat: no-repeat;
     background-size: 80rpx;
 }
